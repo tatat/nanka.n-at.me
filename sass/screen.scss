@@ -1,0 +1,228 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass";
+
+body {
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+  font-size: 1em;
+  line-height: 1.6em;
+  color: #333;
+  letter-spacing: 0.1em;
+  background-color: #fff;
+}
+
+a {
+  @include link-colors(#c16, #f8a, #f8a);
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1.5em;
+  line-height: 2.1em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  letter-spacing: 0.8em;
+}
+
+article + article,
+section + section {
+  margin-top: 1em;
+}
+
+li {
+
+}
+
+img {
+  + img {
+    margin-left: 1em;
+  }
+}
+
+a.image {
+  display: inline-block;
+  padding: 1em;
+  background-color: #222;
+  @include border-radius(5px);
+  @include single-transition(opacity, 0.3s);
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  img {
+    display: block;
+  }
+}
+
+.clearfix {
+  @include legacy-pie-clearfix;
+}
+
+.image + .image {
+  margin-left: 1em;
+}
+
+.h {
+  margin-right: 0.5em;
+  font-weight: bold;
+  color: #aaa;
+}
+
+.published {
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+$page_width: 580px;
+$page_height: 820px;
+
+ul.pages {
+  @extend .clearfix;
+  width: $page_width * 2 + 4 + 20;
+  margin-top: -50px;
+  margin-left: -10px;
+
+  > li {
+    border: 1px solid #eee;
+    width: $page_width;
+    height: $page_height;
+    float: right;
+    margin-top: 50px;
+    margin-left: 10px;
+    position: relative;
+
+    &:first-child,
+    &:last-child {
+      width: $page_width * 2 + 2 + 10;
+      text-align: center;
+      background-color: #eee;
+    }
+  }
+
+  .page-no {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 0.8em;
+    line-height: 0.8em;
+    padding: 0.5em;
+    color: #ccc;
+  }
+}
+
+#wrapper {
+  padding: 2em;
+  margin-left: 0.5em;
+  border-left: 1px solid #ddd;
+
+  > header {
+    h1 {
+      font-weight: normal;
+      font-size: 2.5em;
+      line-height: 3.1em;
+
+      a {
+        @include link-colors(#333, #333, #333);
+      }
+    }
+  }
+
+  > footer {
+    margin-top: 5em;
+    text-align: right;
+
+    small {
+      font-size: 0.9em;
+    }
+  }
+}
+
+#content {
+  margin-top: 3em;
+
+  > article > h1 {
+    
+  }
+}
+
+#content-top {
+  @extend .clearfix;
+  margin-bottom: 2em;
+
+  > article {
+    float: left;
+    margin-top: 0;
+    min-width: 24em;
+
+    > h1 {
+
+    }
+  }
+}
+
+#about {
+  a {
+    font-weight: bold;
+  }
+}
+
+#information {
+  ul {
+    font-size: 0.9em;
+  }
+}
+
+#works {
+  > section {
+    > h1 {
+      color: #caa;
+    }
+
+    > article {
+
+    }
+  }
+}
+
+#magazine {
+  @extend .clearfix;
+
+  > .container {
+    margin-left: -1em;
+    margin-top: -1em;
+
+    > article {
+      float: left;
+      margin-top: 1em;
+      margin-left: 1em;
+      border-left: 1px solid #eee;
+      padding: 0 1em;
+
+      > footer {
+        > * {
+          display: inline-block;
+
+          + * {
+            margin-left: 0.5em;
+          }
+        }
+      }
+    }
+  }
+}
+
+#illustration {
+  
+}
+
+// for fancybox
+
+.fancybox-skin {
+  background-color: #222;
+}

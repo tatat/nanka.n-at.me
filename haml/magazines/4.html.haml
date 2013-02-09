@@ -1,0 +1,24 @@
+!!! 5
+%html{html_attrs("ja")}
+  %head
+    %meta{charset: "UTF-8"}
+    %title 4 - なんか... なんか。
+    %link{rel: "stylesheet", href: "/stylesheets/screen.css"}
+  %body
+    #wrapper
+      %header
+        %h1
+          %a{href: "/"} なんか... なんか。
+
+      %content
+        %h1 4
+
+        %ul.pages
+          = list_of 1..20 do |item|
+            %img{src: "/images/4/pages/#{'%02d' % item}.jpg", alt: "4 - #{item}"}
+            %span.page-no= item
+
+        %p.published 発行 2012-09-02
+      
+      %footer
+        %small Copyright &copy; 2013 なんか... なんか。

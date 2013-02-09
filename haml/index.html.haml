@@ -1,0 +1,91 @@
+!!! 5
+%html{html_attrs("ja")}
+  %head
+    %meta{charset: "UTF-8"}
+    %title なんか... なんか。
+    %link{rel: "stylesheet", href: "/lib/fancybox-2.1.4/jquery.fancybox.css"}
+    %link{rel: "stylesheet", href: "/stylesheets/screen.css"}
+    %script{src: "/lib/jquery-1.9.1.min.js"}
+    %script{src: "/lib/fancybox-2.1.4/jquery.fancybox.pack.js"}
+    %script{src: "/javascripts/main.js"}
+  %body
+    #wrapper
+      %header
+        %h1
+          %a{href: "/"} なんか... なんか。
+
+      #content
+        #content-top
+          %article#about
+            %h1 about
+
+            %ul
+              %li
+                %a{href: "http://ogasawa.la"}> オガサワラユウ
+              %li
+                %a{href: "http://n-at.me"}> tatあt
+
+          %article#information
+            %h1 information
+
+            %ul
+              %li<
+                %span.h> 2013-02-03
+                COMITIA103 T06a
+              %li<
+                %span.h> 2012-11-18
+                COMITIA102 こ05a
+              %li<
+                %span.h>2012-09-02
+                COMITIA101 Q13b
+              %li<
+                %span.h>2012-05-05
+                COMITIA100 べ30a
+              %li<
+                %span.h>2012-02-05
+                COMITIA99 し12b
+
+        %article#works
+          %h1 works
+
+          %section#magazine
+            %h1 magazine
+
+            .container
+              %article#magazine-16
+                %h1 16
+                %a.image{href: "/images/16/01-1280x905.jpg"}
+                  %img{src: "/images/16/01.jpg", alt: "16 cover"}
+                %footer
+                  %p.published 発行 2013-02-03
+              %article#magazine-8
+                %h1 8
+                %a.image{href: "/images/8/01-1280x905.jpg"}
+                  %img{src: "/images/8/01.jpg", alt: "8 cover"}
+                %footer
+                  %p.published 発行 2012-11-18
+              %article#magazine-4
+                %h1 4
+                %a.image{href: "/images/4/01-1280x905.jpg"}
+                  %img{src: "/images/4/01.jpg", alt: "4 cover"}
+                %footer
+                  %p.published 発行 2012-09-02
+                  %a.view{href: "/magazines/4.html"} 読む
+              %article#magazine-2
+                %h1 2
+                %a.image{href: "/images/2/01-1280x906.jpg"}
+                  %img{src: "/images/2/01.jpg", alt: "2 cover"}
+                %a.image{href: "/images/2/02-1280x906.jpg"}
+                  %img{src: "/images/2/02.jpg", alt: "2 back cover"}
+                %footer
+                  %p.published 発行 2012-02-05
+
+          %section#illustration
+            %h1 illustration
+
+            .container
+              %a#illustration-01.image{href: "/images/01-1280x905.jpg"}
+                %img{src: "/images/01.jpg"}
+
+      %footer
+        %small Copyright &copy; 2013 なんか... なんか。
