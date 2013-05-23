@@ -95,6 +95,7 @@ ul.pages {
     margin-top: 50px;
     margin-left: 10px;
     position: relative;
+    overflow: hidden;
 
     &:first-child,
     &:last-child {

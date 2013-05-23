@@ -3,7 +3,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../vendor/bundle/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../vendor/bundle/ruby/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,52 +25,52 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../vendor/bundle/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../vendor/bundle/ruby/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../vendor/bundle/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../vendor/bundle/ruby/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../vendor/bundle/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../vendor/bundle/ruby/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../vendor/bundle/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../vendor/bundle/ruby/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../vendor/bundle/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../vendor/bundle/ruby/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../vendor/bundle/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../vendor/bundle/ruby/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../vendor/bundle/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../vendor/bundle/ruby/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../vendor/bundle/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../vendor/bundle/ruby/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
 /* line 9, ../../sass/screen.scss */
 body {
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
   font-size: 1em;
   line-height: 1.6em;
   color: #333;
@@ -83,11 +83,11 @@ a {
   color: #cc1166;
   text-decoration: none;
 }
-/* line 24, ../../vendor/bundle/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../vendor/bundle/ruby/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:hover {
   color: #ff88aa;
 }
-/* line 27, ../../vendor/bundle/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 27, ../../vendor/bundle/ruby/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:active {
   color: #ff88aa;
 }
@@ -140,7 +140,7 @@ a.image img {
 .clearfix, ul.pages, #content-top, #magazine {
   *zoom: 1;
 }
-/* line 22, ../../vendor/bundle/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 22, ../../vendor/bundle/ruby/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .clearfix:after, ul.pages:after, #content-top:after, #magazine:after {
   content: "\0020";
   display: block;
@@ -176,21 +176,22 @@ ul.pages {
 }
 /* line 90, ../../sass/screen.scss */
 ul.pages > li {
-  border: 1px solid #eeeeee;
+  border: 1px solid #eee;
   width: 580px;
   height: 820px;
   float: right;
   margin-top: 50px;
   margin-left: 10px;
   position: relative;
+  overflow: hidden;
 }
-/* line 100, ../../sass/screen.scss */
+/* line 101, ../../sass/screen.scss */
 ul.pages > li:first-child, ul.pages > li:last-child {
   width: 1172px;
   text-align: center;
   background-color: #eee;
 }
-/* line 107, ../../sass/screen.scss */
+/* line 108, ../../sass/screen.scss */
 ul.pages .page-no {
   display: block;
   position: absolute;
@@ -202,94 +203,94 @@ ul.pages .page-no {
   color: #ccc;
 }
 
-/* line 119, ../../sass/screen.scss */
+/* line 120, ../../sass/screen.scss */
 #wrapper {
   padding: 2em;
   margin-left: 0.5em;
-  border-left: 1px solid #dddddd;
+  border-left: 1px solid #ddd;
 }
-/* line 125, ../../sass/screen.scss */
+/* line 126, ../../sass/screen.scss */
 #wrapper > header h1 {
   font-weight: normal;
   font-size: 2.5em;
   line-height: 3.1em;
 }
-/* line 130, ../../sass/screen.scss */
+/* line 131, ../../sass/screen.scss */
 #wrapper > header h1 a {
   color: #333333;
 }
-/* line 24, ../../vendor/bundle/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../vendor/bundle/ruby/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 #wrapper > header h1 a:hover {
   color: #333333;
 }
-/* line 27, ../../vendor/bundle/ruby/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 27, ../../vendor/bundle/ruby/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 #wrapper > header h1 a:active {
   color: #333333;
 }
-/* line 136, ../../sass/screen.scss */
+/* line 137, ../../sass/screen.scss */
 #wrapper > footer {
   margin-top: 5em;
   text-align: right;
 }
-/* line 140, ../../sass/screen.scss */
+/* line 141, ../../sass/screen.scss */
 #wrapper > footer small {
   font-size: 0.9em;
 }
 
-/* line 146, ../../sass/screen.scss */
+/* line 147, ../../sass/screen.scss */
 #content {
   margin-top: 3em;
 }
 
-/* line 154, ../../sass/screen.scss */
+/* line 155, ../../sass/screen.scss */
 #content-top {
   margin-bottom: 2em;
 }
-/* line 158, ../../sass/screen.scss */
+/* line 159, ../../sass/screen.scss */
 #content-top > article {
   float: left;
   margin-top: 0;
   min-width: 24em;
 }
 
-/* line 170, ../../sass/screen.scss */
+/* line 171, ../../sass/screen.scss */
 #about a {
   font-weight: bold;
 }
 
-/* line 176, ../../sass/screen.scss */
+/* line 177, ../../sass/screen.scss */
 #information ul {
   font-size: 0.9em;
 }
 
-/* line 183, ../../sass/screen.scss */
+/* line 184, ../../sass/screen.scss */
 #works > section > h1 {
   color: #caa;
 }
 
-/* line 196, ../../sass/screen.scss */
+/* line 197, ../../sass/screen.scss */
 #magazine > .container {
   margin-left: -1em;
   margin-top: -1em;
 }
-/* line 200, ../../sass/screen.scss */
+/* line 201, ../../sass/screen.scss */
 #magazine > .container > article {
   float: left;
   margin-top: 1em;
   margin-left: 1em;
-  border-left: 1px solid #eeeeee;
+  border-left: 1px solid #eee;
   padding: 0 1em;
 }
-/* line 208, ../../sass/screen.scss */
+/* line 209, ../../sass/screen.scss */
 #magazine > .container > article > footer > * {
   display: inline-block;
 }
-/* line 211, ../../sass/screen.scss */
+/* line 212, ../../sass/screen.scss */
 #magazine > .container > article > footer > * + * {
   margin-left: 0.5em;
 }
 
-/* line 226, ../../sass/screen.scss */
+/* line 227, ../../sass/screen.scss */
 .fancybox-skin {
   background-color: #222;
 }
